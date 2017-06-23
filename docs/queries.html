@@ -1,0 +1,786 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Queries · React Redux Firebase</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="populate.html" />
+    
+    
+    <link rel="prev" href="auth.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Read Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting_started.html">
+            
+                <a href="getting_started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="auth.html">
+            
+                <a href="auth.html">
+            
+                    
+                    Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="queries.html">
+            
+                <a href="queries.html">
+            
+                    
+                    Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="populate.html">
+            
+                <a href="populate.html">
+            
+                    
+                    Populate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="storage.html">
+            
+                <a href="storage.html">
+            
+                    
+                    Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="recipes/">
+            
+                <a href="recipes/">
+            
+                    
+                    Recipes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="recipes/profile.html">
+            
+                <a href="recipes/profile.html">
+            
+                    
+                    Profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="recipes/auth.html">
+            
+                <a href="recipes/auth.html">
+            
+                    
+                    Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="recipes/actions.html">
+            
+                <a href="recipes/actions.html">
+            
+                    
+                    Actions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="recipes/thunks.html">
+            
+                <a href="recipes/thunks.html">
+            
+                    
+                    Thunks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="recipes/epics.html">
+            
+                <a href="recipes/epics.html">
+            
+                    
+                    Epics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="recipes/routing.html">
+            
+                <a href="recipes/routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="recipes/roles.html">
+            
+                <a href="recipes/roles.html">
+            
+                    
+                    Roles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="recipes/populate.html">
+            
+                <a href="recipes/populate.html">
+            
+                    
+                    Populate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="recipes/upload.html">
+            
+                <a href="recipes/upload.html">
+            
+                    
+                    Upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="recipes/redux-form.html">
+            
+                <a href="recipes/redux-form.html">
+            
+                    
+                    Redux Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="recipes/react-native.html">
+            
+                <a href="recipes/react-native.html">
+            
+                    
+                    React Native
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="recipes/ssr.html">
+            
+                <a href="recipes/ssr.html">
+            
+                    
+                    Server Side Rendering
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="api/">
+            
+                <a href="api/">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="api/constants.html">
+            
+                <a href="api/constants.html">
+            
+                    
+                    constants
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="api/connect.html">
+            
+                <a href="api/connect.html">
+            
+                    
+                    firebaseConnect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="api/reducer.html">
+            
+                <a href="api/reducer.html">
+            
+                    
+                    firebaseStateReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="api/props-firebase.html">
+            
+                <a href="api/props-firebase.html">
+            
+                    
+                    props.firebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="api/get-firebase.html">
+            
+                <a href="api/get-firebase.html">
+            
+                    
+                    getFirebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="api/compose.html">
+            
+                <a href="api/compose.html">
+            
+                    
+                    reactReduxFirebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="api/helpers.html">
+            
+                <a href="api/helpers.html">
+            
+                    
+                    helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="roadmap.html">
+            
+                <a href="roadmap.html">
+            
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="contributing.html">
+            
+                <a href="contributing.html">
+            
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Queries</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="queries">Queries</h1>
+<p>When listening to paths, it is possible to modify the query with any of <a href="https://firebase.google.com/docs/reference/js/firebase.database.Query" target="_blank">Firebase&apos;s included query methods</a>. Below are examples using Firebase query methods as well as other methods that are included (such as &apos;populate&apos;).</p>
+<h2 id="once">once</h2>
+<p>To load a firebase location once instead of binding, the once option can be used:</p>
+<p><strong>Internal Method</strong>: <a href="https://firebase.google.com/docs/reference/js/firebase.database.Query#orderByPriority" target="_blank"> <code>orderByPriority</code></a></p>
+<pre class="language-"><code class="lang-javascript">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">&apos;once&apos;</span><span class="token punctuation">,</span> path<span class="token punctuation">:</span> <span class="token string">&apos;/todos&apos;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="orderbychild">orderByChild</h2>
+<p>To order the query by a child within each object, user orderByChild.</p>
+<p><strong>Internal Method</strong>: <a href="https://firebase.google.com/docs/reference/js/firebase.database.Query#orderByChild" target="_blank"> <code>orderByChild</code></a></p>
+<h4 id="example">Example</h4>
+<p>Ordering a list of todos by the text parameter of the todo item (placing them in alphabetical order).</p>
+<pre class="language-"><code class="lang-javascript">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token string">&apos;/todos#orderByChild=text&apos;</span>
+  <span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;orderByChild=text&apos; ]} // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="orderbykey">orderByKey</h2>
+<p>Order a list by the key of each item. Since push keys contain time, this is also a way of ordering by when items were created.</p>
+<p><strong>Internal Method</strong>:
+<a href="https://firebase.google.com/docs/reference/js/firebase.database.Query#orderByKey" target="_blank"> <code>orderByKey</code></a></p>
+<h4 id="example">Example</h4>
+<p>Ordering a list of todos based on their key (puts them in order of when they were created)</p>
+<pre class="language-"><code class="lang-javascript">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token string">&apos;/todos#orderByKey&apos;</span>
+  <span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;orderByKey&apos; ]} // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="orderbyvalue">orderByValue</h2>
+<p>Order a list by the value of each object. Internally runs</p>
+<p><strong>Internal Method</strong>: <a href="https://firebase.google.com/docs/reference/js/firebase.database.Query#orderByValue" target="_blank"> <code>orderByValue</code></a></p>
+<h4 id="example">Example</h4>
+<p>Ordering a list of score&apos;s based on score&apos;s value</p>
+<pre class="language-"><code class="lang-javascript">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token template-string"><span class="token string">`scores#orderByValue`</span></span>
+  <span class="token comment" spellcheck="true">// { path: &apos;/scores&apos;, queryParams: [ &apos;orderByValue&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="orderbypriority">orderByPriority</h2>
+<p>Order a list by the priority of each item.</p>
+<p><strong>Internal Method</strong>: <a href="https://firebase.google.com/docs/reference/js/firebase.database.Query#orderByPriority" target="_blank"> <code>orderByPriority</code></a></p>
+<h4 id="example">Example</h4>
+<p>Ordering a list based on priorities</p>
+<pre class="language-"><code class="lang-javascript">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token template-string"><span class="token string">`scores#orderByPriority`</span></span>
+  <span class="token comment" spellcheck="true">// { path: &apos;/scores&apos;, queryParams: [ &apos;orderByPriority&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="limittofirst">limitToFirst</h2>
+<p>Limit query results to the first n number of results.</p>
+<p><strong>Internal Method</strong>: <a href="https://firebase.google.com/docs/reference/js/firebase.database.Query#limitToFirst" target="_blank"> <code>limitToFirst</code></a></p>
+<h4 id="examples">Examples</h4>
+<ol>
+<li><p>Displaying only the first todo item</p>
+<pre class="language-"><code class="lang-javascript">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+ <span class="token string">&apos;/todos#limitToFirst&apos;</span>
+ <span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;limitToFirst=1&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p>Displaying only the first 10 todo items</p>
+<pre class="language-"><code class="lang-javascript">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+ <span class="token string">&apos;/todos#limitToFirst=10&apos;</span>
+ <span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;orderByChild=createdBy&apos;, &apos;equalTo=123&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="limittolast">limitToLast</h2>
+<p>Limit query results to the last n number of results</p>
+<p><strong>Internal Method</strong>: <a href="https://firebase.google.com/docs/reference/js/firebase.database.Query#limitToLast" target="_blank"> <code>limitToLast</code></a></p>
+<h4 id="examples">Examples</h4>
+<ol>
+<li><p>Only the <strong>last</strong> todo item</p>
+<pre class="language-"><code class="lang-javascript">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+ <span class="token string">&apos;/todos#limitToLast&apos;</span>
+ <span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;limitToLast&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p>Only the <strong>last 10</strong> todo items</p>
+<pre class="language-"><code class="lang-javascript">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+ <span class="token string">&apos;/todos#limitToLast=10&apos;</span>
+ <span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;limitToLast=10&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="startat">startAt</h2>
+<p>Limit query results to include a range starting at a specific number</p>
+<p><strong>Internal Method</strong>: <a href="https://firebase.google.com/docs/reference/js/firebase.database.Query#limitToLast" target="_blank"> <code>limitToLast</code></a></p>
+<h4 id="examples">Examples</h4>
+<ol>
+<li>Starting at the fifth item<pre class="language-"><code class="lang-js">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+ <span class="token string">&apos;todos#startAt=5&amp;limitToFirst=2&apos;</span>
+ <span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;startAt=5&apos;, &apos;limitToFirst=2&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li>Paginate results<pre class="language-"><code class="lang-js">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+ <span class="token string">&apos;todos#startAt=5&amp;limitToFirst=10&apos;</span>
+ <span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;startAt=5&apos;, &apos;limitToFirst=10&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="endat">endAt</h2>
+<h4 id="examples">Examples</h4>
+<ol>
+<li>Usage with startAt<pre class="language-"><code class="lang-js">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+<span class="token string">&apos;todos#orderByChild=added&amp;startAt=1&amp;endAt=5&apos;</span>
+<span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;orderByChild=added&apos;, &apos;startAt=1&apos;, &apos;endAt=5&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="equalto">equalTo</h2>
+<p>Limit query results with parameter equal to previous query method (i.e when used with orderByChild, it limits results with child equal to provided value). Internally runs <a href="https://firebase.google.com/docs/reference/js/firebase.database.Query#equalTo" target="_blank">Firebase&apos;s <code>equalTo</code></a>.</p>
+<h3 id="parsing">Parsing</h3>
+<p>The following are internally parsed:</p>
+<ul>
+<li><code>null</code></li>
+<li><code>boolean</code></li>
+<li><code>number</code></li>
+</ul>
+<p>This means the actual value will be parsed instead of the string containing the value. If you do not want this to happen, look at the <code>notParsed</code> query parameter below.</p>
+<h4 id="examples">Examples</h4>
+<ol>
+<li>Order by child parameter<pre class="language-"><code class="lang-js">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+<span class="token string">&apos;todos#orderByChild=createdBy&amp;equalTo=ASD123&apos;</span><span class="token punctuation">,</span>
+<span class="token comment" spellcheck="true">// { path: &apos;/todos&apos;, queryParams: [ &apos;orderByChild=createdBy&apos;, &apos;equalTo=ASD123&apos; ] } // object notation</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="notparsed">notParsed</h2>
+<p>Can be used to keep internal parsing from happening. Useful when attempting to search a number string using <code>equalTo</code></p>
+<h4 id="examples">Examples</h4>
+<ol>
+<li>Order by child parameter equal to a number string. Equivalent of searching for <code>&apos;123&apos;</code> (where as not using <code>notParsed</code> would search for children equal to <code>123</code>)<pre class="language-"><code class="lang-js">@<span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+<span class="token punctuation">{</span>
+ path<span class="token punctuation">:</span> <span class="token string">&apos;/todos&apos;</span><span class="token punctuation">,</span>
+ queryParams<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+   <span class="token string">&apos;orderByChild=createdBy&apos;</span><span class="token punctuation">,</span>
+   <span class="token string">&apos;notParsed&apos;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// keeps equalTo from automatically parsing</span>
+   <span class="token string">&apos;equalTo=123&apos;</span>
+ <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="populate">Populate </h2>
+<p>Populate allows you to replace IDs within your data with other data from Firebase. This is very useful when trying to keep your data flat. Some would call it a <em>join</em>, but it was modeled after <a href="http://mongoosejs.com/docs/populate.html" target="_blank">the mongo populate method</a>.</p>
+<p>Visit <a href="populate.html">Populate Section</a> for full documentation.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="auth.html" class="navigation navigation-prev " aria-label="Previous page: Auth">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="populate.html" class="navigation navigation-next " aria-label="Next page: Populate">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Queries","level":"1.4","depth":1,"next":{"title":"Populate","level":"1.5","depth":1,"path":"docs/populate.md","ref":"docs/populate.md","articles":[]},"previous":{"title":"Auth","level":"1.3","depth":1,"path":"docs/auth.md","ref":"docs/auth.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","versions-select"],"styles":{"website":"build/gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/prescottprue/react-redux-firebase/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"versions":{"gitbookConfigURL":"https://raw.githubusercontent.com/prescottprue/react-redux-firebase/v2.0.0/book.json","options":[{"value":"http://docs.react-redux-firebase.com/history/v1.4.0/","text":"Version 1.4.0"},{"value":"http://docs.react-redux-firebase.com/history/v2.0.0/","text":"Version 2.0.0"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/prescottprue/react-redux-firebase/tree/master"},"theme-default":{"styles":{"website":"build/gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React Redux Firebase","gitbook":">=3.2.1"},"file":{"path":"docs/queries.md","mtime":"2017-05-24T00:35:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-23T09:45:37.394Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
